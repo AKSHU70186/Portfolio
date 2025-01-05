@@ -4,114 +4,160 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akash Thakur's Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="container">
+    <header class="bg-dark text-white py-3">
+        <div class="container d-flex justify-content-between align-items-center">
             <div class="logo">Akash Thakur</div>
             <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link text-white" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="btn btn-primary text-white" href="#hireme">Hire Me</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
-        <section id="home" class="hero">
+        <section id="home" class="hero bg-primary text-white text-center d-flex align-items-center justify-content-center" style="height: 100vh;">
             <div class="container">
                 <h1 class="animate__animated animate__fadeInDown">Hi, I'm Akash Thakur</h1>
                 <p class="animate__animated animate__fadeInUp">A Professional Full Stack Developer.</p>
-                <a href="#contact" class="btn animate__animated animate__bounceIn">Hire Me</a>
+                <a href="#contact" class="btn btn-light btn-lg animate__animated animate__bounceIn">Hire Me</a>
             </div>
         </section>
-        <section id="about" class="about">
-            <div class="container">
+        <section id="about" class="about py-5">
+            <div class="container text-center">
                 <h2>About Me</h2>
                 <p>I am a passionate Full Stack Developer skilled in HTML, CSS, JavaScript, ReactJS, and RESTful APIs. I am currently learning Node.js and always open to new challenges and collaborations.</p>
-                <img src="your-profile-picture.jpg" alt="Profile Picture" class="animate__animated animate__zoomIn">
+                <img src="your-profile-picture.jpg" alt="Profile Picture" class="rounded-circle img-fluid animate__animated animate__zoomIn">
             </div>
         </section>
-        <section id="skills" class="skills">
-            <div class="container">
-                <h2>Skills</h2>
-                <ul class="skills-list">
-                    <li>
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/800px-HTML5_logo_and_wordmark.svg.png" alt="HTML">
+        <section id="skills" class="skills py-5 bg-light">
+            <div class="container text-center">
+                <h2>Best Skill On</h2>
+                <div class="row">
+                    <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/800px-HTML5_logo_and_wordmark.svg.png" alt="HTML" class="img-fluid rounded-circle">
                         <p>HTML</p>
-                    </li>
-                    <li>
-                        <img src="https://www.w3schools.com/whatis/img_css.jpg" alt="CSS">
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                        <img src="https://www.w3schools.com/whatis/img_css.jpg" alt="CSS" class="img-fluid rounded-circle">
                         <p>CSS</p>
-                    </li>
-                    <li>
-                        <img src="https://logos-world.net/wp-content/uploads/2023/02/JavaScript-Logo.png" alt="JavaScript">
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                        <img src="https://logos-world.net/wp-content/uploads/2023/02/JavaScript-Logo.png" alt="JavaScript" class="img-fluid rounded-circle">
                         <p>JavaScript</p>
-                    </li>
-                    <li>
-                        <img src="https://www.patterns.dev/img/reactjs/react-logo@3x.svg" alt="ReactJS">
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                        <img src="https://www.patterns.dev/img/reactjs/react-logo@3x.svg" alt="ReactJS" class="img-fluid rounded-circle">
                         <p>ReactJS</p>
-                    </li>
-                    <li>
-                        <img src="https://appmaster.io/api/_files/PqV7MuNwv89GrZvBd4LNNK/download/" alt="RESTful APIs">
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                        <img src="https://appmaster.io/api/_files/PqV7MuNwv89GrZvBd4LNNK/download/" alt="RESTful APIs" class="img-fluid rounded-circle">
                         <p>RESTful APIs</p>
-                    </li>
-                    <li>
-                        <img src="https://miro.medium.com/v2/resize:fit:800/1*bc9pmTiyKR0WNPka2w3e0Q.png" alt="Node.js">
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                        <img src="https://miro.medium.com/v2/resize:fit:800/1*bc9pmTiyKR0WNPka2w3e0Q.png" alt="Node.js" class="img-fluid rounded-circle">
                         <p>Node.js (learning)</p>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
         </section>
-        <section id="projects" class="projects">
-            <div class="container">
-                <h2>Projects</h2>
-                <ul class="projects-list">
-                    <li>
-                        <img src="https://brightdata.com/wp-content/uploads/2022/08/news_web_scraper_api-2.svg" alt="News Scraper">
-                        <p><strong>News Scraper:</strong> <a class="project-link" href="https://github.com/AKSHU70186/News-Article-Scraper" target="_blank">A Python-based news article scraper</a>.</p>
-                    </li>
-                    <li>
-                        <img src="https://cdn.hackernoon.com/images/-4ya3q6y.png" alt="Google Maps Scraper">
-                        <p><strong>Google Maps Scraping:</strong> <a class="project-link" href="https://github.com/AKSHU70186/Google-Mape-Scraper" target="_blank">Scraping Google Maps data using Python and Selenium</a>.</p>
-                    </li>
-                </ul>
+        <section id="projects" class="projects py-5">
+            <div class="container text-center">
+                <h2>Portfolio</h2>
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="card">
+                            <img src="https://brightdata.com/wp-content/uploads/2022/08/news_web_scraper_api-2.svg" class="card-img-top" alt="News Scraper">
+                            <div class="card-body">
+                                <h5 class="card-title">News Scraper</h5>
+                                <p class="card-text">A Python-based news article scraper.</p>
+                                <a href="https://github.com/AKSHU70186/News-Article-Scraper" class="btn btn-primary" target="_blank">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card">
+                            <img src="https://cdn.hackernoon.com/images/-4ya3q6y.png" class="card-img-top" alt="Google Maps Scraper">
+                            <div class="card-body">
+                                <h5 class="card-title">Google Maps Scraping</h5>
+                                <p class="card-text">Scraping Google Maps data using Python and Selenium.</p>
+                                <a href="https://github.com/AKSHU70186/Google-Mape-Scraper" class="btn btn-primary" target="_blank">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-        <section id="contact" class="contact">
-            <div class="container">
-                <h2>Contact</h2>
-                <p>Email: [Your Email]</p>
-                <a class="resume-link" href="file:///home/akashthakur/Downloads/AkashResume%20(1).pdf">Download My Resume</a>
+        <section id="testimonials" class="testimonials py-5 bg-light">
+            <div class="container text-center">
+                <h2>What They Says</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="testimony1.jpg" class="card-img-top rounded-circle" alt="User 1">
+                            <div class="card-body">
+                                <p class="card-text">"Great to work with, delivered on time and exceeded expectations!"</p>
+                                <p>- User 1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="testimony2.jpg" class="card-img-top rounded-circle" alt="User 2">
+                            <div class="card-body">
+                                <p class="card-text">"Amazing work! Very professional and skilled."</p>
+                                <p>- User 2</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="testimony3.jpg" class="card-img-top rounded-circle" alt="User 3">
+                            <div class="card-body">
+                                <p class="card-text">"Excellent designer, brought my vision to life perfectly."</p>
+                                <p>- User 3</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact py-5">
+            <div class="container text-center">
+                <h2>7018619880</h2>
+                <p>Email: akthakur8080@gmail.com </p>
+                <a class="btn btn-primary" href="file:///home/akashthakur/Downloads/AkashResume%20(1).pdf">Download My Resume</a>
             </div>
         </section>
     </main>
-    <footer>
+    <footer class="bg-dark text-white py-3 text-center">
         <div class="container">
             <p>&copy; 2025 Akash Thakur. All rights reserved.</p>
         </div>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <script>
-        new WOW().init();
-    </script>
-</body>
-</html>
-body {
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+[_{{{CITATION{{{_1{](https://github.com/Mazagu/IconsGroup/tree/8fa2da66cd9ded12fa49aad5711d9c11dedab276/icons_example.php)[_{{{CITATION{{{_2{](https://github.com/Bala2703/blog_website/tree/97724089cf21aa6b38849d03afed8ca7ace17700/admin.php)[_{{{CITATION{{{_3{](https://github.com/jeffersommarcel/veiculos-challenge/tree/cb2f163d42bd815dda574c0511ce0f152e3840e5/resources%2Fviews%2Flayouts%2Fapp.blade.php)[_{{{CITATION{{{_4{](https://github.com/dantehgxng/proyecto2/tree/7393cc5776a06c836aabdd2f29142e6f628579a9/contacto.php)[_{{{CITATION{{{_5{](https://github.com/shreyas1925/dbms-sem-lab/tree/3aa3299e61d55f6a565f56a86a6a4695844d4e6c/app.php)[_{{{CITATION{{{_6{](https://github.com/pranay-343/pranay-343.github.io/tree/0812546e6c312506a76cc1f000b354a248d5064f/test%2Ffooter.php)[_{{{CITATION{{{_7{](https://github.com/abanoubtalaatr/portfolio/tree/23f24e79e595651cb88cf111a19888ff3d55b52a/resources%2Fviews%2Ffront%2Fhome.blade.php)[_{{{CITATION{{{_8{](https://github.com/Akwasi123/Portfolio/tree/19a2adece9c698cdec24d1e4f49db77bb43050f6/index.php)[_{{{CITATION{{{_9{](https://github.com/jk-20/cms-portfolio/tree/295830377be12a8c32015a6761fe9c39d2f6b1ea/includes%2Fnav_bar.php)
+    body {
     font-family: 'Arial', sans-serif;
-    background-color: #ffffff;
-    color: #333;
+    background-color: #1f1f1f;
+    color: #ffffff;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #1f1f1f;
+    color: #ffffff;
     padding: 20px 0;
     position: fixed;
     width: 100%;
@@ -143,9 +189,20 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
     font-size: 16px;
+}
+
+header nav ul li .hireme-btn {
+    background-color: #ff007f;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+header nav ul li .hireme-btn:hover {
+    background-color: #ff0060;
 }
 
 .hero {
@@ -165,13 +222,17 @@ header nav ul li a {
     margin-bottom: 20px;
 }
 
+.hero h1 span {
+    color: #ff007f;
+}
+
 .hero p {
     font-size: 24px;
     margin-bottom: 40px;
 }
 
 .hero .btn {
-    background-color: #4CAF50;
+    background-color: #ff007f;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -180,7 +241,7 @@ header nav ul li a {
 }
 
 .hero .btn:hover {
-    background-color: #45a049;
+    background-color: #ff0060;
 }
 
 .container {
@@ -244,4 +305,44 @@ header nav ul li a {
 }
 
 .project-link {
-    color: #[_{{{CITATION{{{_1{](https://github.com/Uvacoder/port-lauracharvey/tree/3f5aa9bd664f41c6ad339db39073b90421997fa7/src%2Fcomponents%2FNavbar.js)[_{{{CITATION{{{_2{](https://github.com/jessicastrawford/portfolio/tree/f346ab4493b80a86c0c52f8dd8ea1653a5eba832/src%2Fcomponents%2FNavbar.js)[_{{{CITATION{{{_3{](https://github.com/bgpedersen/BMGPmediaOld/tree/41d851fa2995d38d9ca2f72a93aea58f720a56bc/includes%2Fheader.php)[_{{{CITATION{{{_4{](https://github.com/GrzLnx/MIST-RY/tree/250766905cc5108dc00aecb19eb1978078c1256d/resources%2Fviews%2Ftemplates%2Ftemplate-parts%2Fheader.blade.php)[_{{{CITATION{{{_5{](https://github.com/kathgallardo/kath_website/tree/955a53c6285b7197bec9b7fba699d0ddfe8aa2d7/index.php)[_{{{CITATION{{{_6{](https://github.com/Dzalila/dzalila-PWB/tree/bbffc2f270270c5204aa1fc2758b1b81260910c6/resources%2Fviews%2Fgaleri.blade.php)[_{{{CITATION{{{_7{](https://github.com/joaorocha/new-portfolio/tree/f4e60b06ad9cc0f907d18cc973c2ceb31de6effd/footer.php)[_{{{CITATION{{{_8{](https://github.com/amit1884/ojassnew/tree/ea14911255e9f64e486335234913231b0fe1ca22/team_new%2Fteam.php)
+    color: #ff007f;
+    text-decoration: none;
+}
+
+.project-link:hover {
+    color: #ff0060;
+}
+
+footer {
+    background-color: #1f1f1f;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+}
+$(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+            // Store hash
+            var hash = this.hash;
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function(){
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+            });
+        }
+    });
+
+    // Initialize WOW.js
+    new WOW().init();
+});
