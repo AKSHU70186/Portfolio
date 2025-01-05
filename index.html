@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akash Thakur's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            animation: slideInDown 1s;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .section {
+            margin: 40px 0;
+            animation: fadeIn 2s;
+        }
+
+        .section h2 {
+            margin-bottom: 20px;
+        }
+
+        .skills-list, .projects-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .skills-list li, .projects-list li {
+            margin: 10px 0;
+            animation: bounceIn 2s;
+        }
+
+        .resume-link {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+            animation: rubberBand 1s;
+        }
+
+        .resume-link:hover {
+            background-color: #45a049;
+        }
+
+        @keyframes slideInDown {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes bounceIn {
+            from, 20%, 40%, 60%, 80%, to {
+                transform: translateY(0);
+            }
+            0% {
+                opacity: 0;
+                transform: translateY(-100%);
+            }
+            40% {
+                opacity: 1;
+                transform: translateY(-30px);
+            }
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+
+        @keyframes rubberBand {
+            from {
+                transform: scale3d(1, 1, 1);
+            }
+
+            30% {
+                transform: scale3d(1.25, 0.75, 1);
+            }
+
+            40% {
+                transform: scale3d(0.75, 1.25, 1);
+            }
+
+            50% {
+                transform: scale3d(1.15, 0.85, 1);
+            }
+
+            65% {
+                transform: scale3d(.95, 1.05, 1);
+            }
+
+            75% {
+                transform: scale3d(1.05, .95, 1);
+            }
+
+            to {
+                transform: scale3d(1, 1, 1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Akash Thakur</h1>
+        <h3>Full Stack Developer | Gurugram, Haryana, India</h3>
+    </header>
+    <div class="container">
+        <div class="section">
+            <h2>About Me</h2>
+            <p>I am a passionate Full Stack Developer skilled in HTML, CSS, JavaScript, ReactJS, and RESTful APIs. I am currently learning Node.js and always open to new challenges and collaborations.</p>
+        </div>
+        <div class="section">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>ReactJS</li>
+                <li>RESTful APIs</li>
+                <li>Node.js (learning)</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Projects</h2>
+            <ul class="projects-list">
+                <li><strong>News Scraper:</strong> A Python-based news article scraper.</li>
+                <li><strong>Google Maps Scraping:</strong> Scraping Google Maps data using Python and Selenium.</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Contact</h2>
+            <p>Email: [Your Email]</p>
+            <a class="resume-link" href="file:///home/akashthakur/Downloads/AkashResume%20(1).pdf">Download My Resume</a>
+        </div>
+    </div>
+</body>
+</html>
